@@ -1,0 +1,37 @@
+@import "../../index.scss";
+
+.top-bar {
+    width: 100vw;
+    height: 222px;
+}
+
+.primary-bar {
+    @include flex-center;
+    background: $primary;
+    height: 55px;
+}
+
+.light-bar {
+    @include flex-center;
+    background: $light;
+    height: 106px;
+    color: $darkPurple;
+    justify-content: space-evenly;
+}
+
+.dark-purple-bar {
+    @include flex-center;
+    background: $darkPurple;
+    height: 61px;
+    color: $light;
+}
+
+.donate-text {
+    color: $darkPurple;
+    font-size: 18px;
+}
+
+// todo: don't do this explicitly; use grid or flexbox
+.margin-right {
+    margin-right: 43px;
+}
