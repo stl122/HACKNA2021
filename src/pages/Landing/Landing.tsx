@@ -1,8 +1,11 @@
+// eslint-disable-next-line
 import React, { FunctionComponent } from 'react'
+// eslint-disable-next-line
 import { RouteComponentProps } from 'react-router';
 import Header from '../../components/Header/Header';
 import LandingBackground from "../../assets/LandingBackground.jpg";
 import './Landing.scss'
+// eslint-disable-next-line
 import Card from '../../components/Card/Card';
 
 interface ILandingProps extends RouteComponentProps {
@@ -46,10 +49,14 @@ const Landing: FunctionComponent<ILandingProps> = (props: ILandingProps) => (
       background: `url(${LandingBackground})`,
       height: 1039,
     }}>
-      <h1 className="landing-cta heading-light">
-        Hand-in-Hand <sup className="supertext">TM</sup><br />
-        Partner with us to solve <br />
-        problems around the world.
+      <h1 className="landing-cta heading-light main-box">
+        <div className="cta">
+          Hand-in-Hand<sup className="supertext">TM</sup><br />
+          Partner with us to solve<br />
+          problems around the world.
+        </div>
+        <button className="login-button main-box-button" type="button">LOGIN</button>
+        <button className="signup-button main-box-button" type="button">SIGN UP</button>
       </h1>
     </section>
     <section>
