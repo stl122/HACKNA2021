@@ -13,10 +13,28 @@
     position: relative;
 }
 
-.landing-heading {
+.heading-1 {
     font-size: 47px;
-    color: $light;
+}
+
+.landing-cta {
+    @extend .heading-1;
     position: absolute;
     left: 17%;
     top: 12%;
+}
+
+.heading-primary {
+    @extend .heading-1;
+    color: $primary;
+}
+
+.heading-light {
+    @extend .heading-1;
+    color: $light;
+}
+
+.heading-darkpurple {
+    @extend .heading-1;
+    color: $darkPurple;
 }
